@@ -1,0 +1,238 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    margin: 20px 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #45a049;
+}
+
+/* Hero Section */
+.hero-image {
+    background: url('books-hero.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center; /* Center the text horizontally */
+    padding: 20px; /* Optional padding */
+}
+
+.hero-image h1 {
+    font-size: 3em;
+    margin-bottom: 10px; /* Space between h1 and p */
+}
+
+.hero-image p {
+    font-size: 1.5em; /* Adjust the font size if needed */
+    margin-top: 10px; /* Space between p and h1 */
+}
+
+
+/* Main Section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1.1em;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Book, Wishlist, and Review Items */
+.book-list, .wishlist-list, .reviews-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.book-item, .wishlist-item, .review-item {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-item:hover, .wishlist-item:hover, .review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.book-item .rating,
+.review-item .rating {
+    color: #ff9800; /* Orange for ratings */
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .hero-image {
+        height: 250px;
+    }
+
+    .hero-image h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        width: 100%;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .hero-image h1 {
+        font-size: 1.8em;
+    }
+
+    .nav-links a {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Book - Second Hand Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">📚 Second Hand Book Exchange</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="buy.html">Purchase Book</a></li>
+                <li><a href="wishlist.html">Wishlist</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Sell Your Book</h2>
+        <form id="sell-form">
+            <label for="book-name">Book Name:</label>
+            <input type="text" id="book-name" required>
+            <label for="author">Author:</label>
+            <input type="text" id="author" required>
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+            <label for="seller-name">Your Name:</label>
+            <input type="text" id="seller-name" required>
+            <label for="phone">Your Phone Number:</label>
+            <input type="text" id="phone" required>
+            <button type="submit">List Book</button>
+        </form>
+        <h3>Listed books</h3>
+        <div class="book list"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Second Hand Book Exchange</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
